@@ -38,9 +38,10 @@ defmodule Corto.MixProject do
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
-                 {:plug_cowboy, "~> 2.0"},
-                                {:plug, "~> 1.7"},
-                                        {:poison, ">= 0.0.0"},
+      {:plug_cowboy, "~> 2.0"},
+      {:plug, "~> 1.7"},
+      {:poison, ">= 0.0.0"},
+      {:edeliver, "~> 1.4.2"},
       {:ecto_mnesia, "~> 0.9.1"},
       {:distillery, "~> 1.5"},
       {:libcluster, github: "bitwalker/libcluster", branch: "master"}
