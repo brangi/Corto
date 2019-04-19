@@ -12,6 +12,7 @@ config :corto,
 # Configures the endpoint
 config :corto, CortoWeb.Endpoint,
   url: [host: "localhost"],
+  server: true,
   http: [port: 4000],
   secret_key_base: "JxjtZPXDRTady5IDPd8GxST5jrZxpITw/7qCl5isa3oYmcPz1W0P0yMahFsUzH0K",
   render_errors: [view: CortoWeb.ErrorView, accepts: ~w(json)],

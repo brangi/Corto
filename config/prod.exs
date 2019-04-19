@@ -15,8 +15,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :corto, CortoWeb.Endpoint,
   load_from_system_env: true,
-  server: true,
-  http: [port: 80],
+  http: [port: 4000],
   url: [host: "localhost", port: 80]
   #cache_static_manifest: "priv/static/cache_manifest.json"
 
