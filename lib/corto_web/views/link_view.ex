@@ -13,7 +13,8 @@ defmodule CortoWeb.LinkView do
   def render("link.json", %{link: link}) do
     %{
       hash: link.hash,
-      url: link.url
+      url: link.url,
+      shortLink: "http://corto.link/#{link.hash}"
     }
   end
 end
