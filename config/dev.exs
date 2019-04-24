@@ -6,14 +6,15 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :corto, CortoiWeb.Endpoint,
-  http: [port: 4000],
-  server: true,
-  debug_errors: true,
-  code_reloader: true,
-  check_origin: false,
-  watchers: []
-
+config :corto, CortoWeb.Endpoint,
+       url: [host: "localhost"],
+       server: true,
+       http: [port: 4000],
+       secret_key_base: "JxjtZPXDRTady5IDPd8GxST5jrZxpITw/7qCl5isa3oYmcPz1W0P0yMahFsUzH0K",
+       render_errors: [view: CortoWeb.ErrorView, accepts: ~w(json)],
+       pubsub: [name: Corto.PubSub,
+       cache_static_manifest: "priv/static/cache_manifest.json",
+       adapter: Phoenix.PubSub.PG2]
 # ## SSL Support
 #
 # In order to use HTTPS in development, a self-signed
@@ -50,4 +51,5 @@ config :ecto_mnesia,
        host: :"corto@127.0.0.1"
        # host: {:system, :atom, "MNESIA_HOST", Kernel.node()}, FOR WHEN CREATING LOCALLY
        #storage_type: {:system, :atom, "MNESIA_STORAGE_TYPE", :disc_copies}
+
 

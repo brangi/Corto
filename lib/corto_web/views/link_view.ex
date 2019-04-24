@@ -11,10 +11,15 @@ defmodule CortoWeb.LinkView do
   end
 
   def render("link.json", %{link: link}) do
+    {:ok, hostname} = :inet.gethostname
+    host = case hostname do
+       'corto' -> "http://corto.link/"
+       _-> "http://localhost:4000/"
+      end
     %{
       hash: link.hash,
       url: link.url,
-      shortLink: "http://corto.link/#{link.hash}"
+      shortLink: "#{host}#{link.hash}"
     }
   end
 end

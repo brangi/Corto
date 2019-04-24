@@ -8,16 +8,15 @@ use Mix.Config
 # General application configuration
 config :corto,
   ecto_repos: [Corto.Repo.Mnesia]
-
 # Configures the endpoint
-config :corto, CortoWeb.Endpoint,
-  url: [host: "localhost"],
-  server: true,
-  http: [port: 4000],
-  secret_key_base: "JxjtZPXDRTady5IDPd8GxST5jrZxpITw/7qCl5isa3oYmcPz1W0P0yMahFsUzH0K",
-  render_errors: [view: CortoWeb.ErrorView, accepts: ~w(json)],
-  pubsub: [name: Corto.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+#config :corto, CortoWeb.Endpoint,
+#  url: [host: "localhost"],
+#  server: true,
+#  http: [port: 4000],
+#  secret_key_base: "JxjtZPXDRTady5IDPd8GxST5jrZxpITw/7qCl5isa3oYmcPz1W0P0yMahFsUzH0K",
+#  render_errors: [view: CortoWeb.ErrorView, accepts: ~w(json)],
+#  pubsub: [name: Corto.PubSub,
+#           adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,

@@ -44,6 +44,7 @@ defmodule Corto.MixProject do
       {:edeliver, "~> 1.4.2"},
       {:ecto_mnesia, "~> 0.9.1"},
       {:distillery, "~> 1.5"},
+      {:plug_static_index_html, "~> 1.0"},
       {:libcluster, github: "bitwalker/libcluster", branch: "master"}
     ]
   end
