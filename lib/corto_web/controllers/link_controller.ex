@@ -40,12 +40,5 @@ defmodule CortoWeb.LinkController do
        _->
          redirect(conn, to: "/")
     end
-
-
-    #IO.puts("----------------")
-    #IO.inspect(url)
-    #IO.puts("----------------")
-
-    #redirect(conn, external: url)
   end
 end
