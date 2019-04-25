@@ -11,9 +11,9 @@ defmodule CortoWeb.LinkView do
   end
 
   def render("link.json", %{link: link}) do
-    {:ok, hostname} = :inet.gethostname
+    {:ok, hostname} = :inet.gethostname ## Move this to utils ormaybe read env instead?
     host = case hostname do
-       'corto' -> "http://corto.link/"
+       'corto' -> "https://corto.link/"
        _-> "http://localhost:4000/"
       end
     %{
