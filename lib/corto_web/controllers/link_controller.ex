@@ -31,9 +31,21 @@ defmodule CortoWeb.LinkController do
   end
 
   def get_and_redirect(conn, %{"id" => id}) do
-    url = id
-          |> Links.get_link!()
-          |> Map.get(:url)
-    redirect(conn, external: url)
+    try do
+      url = id
+            |> Links.get_link!()
+            |> Map.get(:url)
+      redirect(conn, external: url)
+    rescue
+       _->
+         redirect(conn, to: "/")
+    end
+
+
+    #IO.puts("----------------")
+    #IO.inspect(url)
+    #IO.puts("----------------")
+
+    #redirect(conn, external: url)
   end
 end
