@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
 
   componentWillMount() {
-    document.title = 'Corto - url shortener'
+    document.title = 'Corto'
   }
   dataJson(){
     return {
