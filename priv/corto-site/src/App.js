@@ -24,7 +24,7 @@ class App extends Component {
           </p>
           <ReactJson src={this.dataJson()}
                      theme="summerfruit:inverted"
-                     Collapsed={false}
+                     collapsed={false}
                      displayDataTypes={false}
                      name={false}
                      indentWidth={4}

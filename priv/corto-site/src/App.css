@@ -9,12 +9,20 @@
 
 .round-div-corner {
   text-align: center;
-
   border-radius: 25px;
   border: 2px solid #73AD21;
   padding: 20px;
   width: 500px;
   height: 45px;
+}
+
+.round-div-corner-body {
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 10px;
+  width: 100px;
+  height: 30px;
 }
 
 body:after{
