@@ -1,5 +1,5 @@
 #!/bin/bash
-
+MIX=dev mix release 
 cd priv/corto-site/
 yarn
 rm -rf build/
