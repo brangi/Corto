@@ -1,10 +1,54 @@
+body:after{
+  content: "beta";
+  position: fixed;
+  width: 80px;
+  height: 25px;
+  background: #EE8E4A;
+  top: 7px;
+  left: -20px;
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 27px;
+  -ms-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
 .App {
-  font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .body-style{
   background: none no-repeat scroll 0 0 #fff;
   position: relative;
+}
+
+.flex {
+  display: flex;
+  padding-left: 50px;
+}
+
+.input-link {
+  border-radius: 25px;
+  font-size:24px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 500px;
+  height: 15px;
+  outline: none;
+
+}
+.button-done {
+  border-radius: 10px;
+  font-size:20px;
+  cursor:pointer;
+  outline: none;
+  border: 2px solid #73AD21;
+
 }
 
 .round-div-corner {
@@ -25,25 +69,6 @@
   height: 30px;
 }
 
-body:after{
-  content: "beta";
-  position: fixed;
-  width: 80px;
-  height: 25px;
-  background: #EE8E4A;
-  top: 7px;
-  left: -20px;
-  text-align: center;
-  font-size: 13px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-  line-height: 27px;
-  -ms-transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg);
-  transform:rotate(-45deg);
-}
 
 .App-header {
   background-color: #282c34;
