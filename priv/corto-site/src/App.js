@@ -91,7 +91,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h2>URL Shortener</h2>
+          <h2>Corto</h2>
           <br/>
           <div className="flex">
             <form id="url-form">
