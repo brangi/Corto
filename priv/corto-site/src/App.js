@@ -29,13 +29,11 @@ class App extends Component {
   }
 
   isValidurl(string){
-    // eslint-disable-next-line
     const matcher = /^(?:\w+:)?\/\/([^\s\.]+\.\S{2}|localhost[\:?\d]*)\S*$/;
     return matcher.test(string);
   }
 
   shortIt() {
-    console.log(this.state.url);
     if(this.isValidurl(this.state.url)){
       fetch("/api/links", {
         method: "post",
@@ -51,7 +49,6 @@ class App extends Component {
       })
         .then(response => response.json())
         .then( (response) => {
-          console.log(response);
           if(response.data) {
             document.getElementById("url-form").reset();
             this.setState({ url: '' });
