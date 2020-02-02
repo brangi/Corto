@@ -29,6 +29,7 @@ class App extends Component {
   }
 
   isValidurl(string){
+    //eslint-disable-next-line
     const matcher = /^(?:\w+:)?\/\/([^\s\.]+\.\S{2}|localhost[\:?\d]*)\S*$/;
     return matcher.test(string);
   }
