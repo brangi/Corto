@@ -115,7 +115,7 @@ class App extends Component {
                      collapsed={false}
                      displayDataTypes={false}
                      name={false}
-                     indentWidth={4}
+                     indentWidth={2}
                      displayObjectSize={false}
                  />
         </header>
